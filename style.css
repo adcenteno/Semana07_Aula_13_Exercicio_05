@@ -1,0 +1,108 @@
+/*********************************************************************************/
+*{
+	margin: 0px;
+	padding: 0px;
+	outline-style: none;
+	border-style: none;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Raleway', sans-serif;
+	font-style: normal;
+	font-size: 100%;
+	color: #000000;
+}
+
+.container{
+	display: flex;
+	width: 50%;
+	height: 100%;
+	margin: 0px auto 0px auto;
+}
+/*******************************************************************************************/
+#blockOfForm{
+	width: 100%;
+	background-color: #F2FA02;
+}
+
+#containerOfForm{
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #29AC12;
+	border-style: solid;
+	border-width: 4px;
+	border-color: #1719D2;
+}
+
+#containerOfButton{
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+#uniqueForm{
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+input[type = text]{
+	width: 90%;
+	margin: 0px 0px 0px 5%;
+	padding: 2.5%;
+	border-style: solid
+	border-color: #000;
+	border-width: 5px;
+	border-radius: 4px;
+	font-size: 1.25em;
+	text-transform: uppercase;
+}
+
+label{
+	font-size: 1.25em;
+	font-weight: 600;
+	display: block;
+	padding: 5% 0px 0px 5%;
+	color: #F2FA02;
+}
+
+input[type=submit], input[type=button]{
+	display: block;
+	font-size: 0.95em;
+	font-weight: 600;
+	padding: 0.95em 0.95em;
+	text-decoration: none;
+	background-color: #595A5C;
+	color: #FFFFFF;
+	margin: 5% auto 5% auto;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+#rua, #bairro, #cidade, #estado{
+	background-color: #B6BAB5;
+}
+/*******************************************************************************************/
+@media screen and (max-width: 415px){
+	body{
+		font-size: 50%;
+	}
+
+	.container{
+		width: 95%;
+	}
+}
+
+@media screen and (max-width: 770px) and (min-width: 415px){
+	body{
+		font-size: 50%;
+	}
+
+	.container{
+		width: 50%;
+	}
+}
